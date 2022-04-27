@@ -121,6 +121,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2559655877078879780}
   - component: {fileID: 4085530944380863278}
+  - component: {fileID: 7781648495199428893}
   m_Layer: 0
   m_Name: zombie
   m_TagString: Untagged
@@ -160,8 +161,21 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 4
   m_CollisionDetection: 0
+--- !u!65 &7781648495199428893
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2940403991713371294}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6.001461, y: 7.71676, z: 1}
+  m_Center: {x: -0.03133148, y: 3.3583798, z: 0}
 --- !u!1 &6206397282250211318
 GameObject:
   m_ObjectHideFlags: 0
