@@ -3,18 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class RepeatBackground : MonoBehaviour
-{   private Vector3 startPos;
+{   
+    public float scroll_Speed = 0.08f;
+    private MeshRenderer mesh_Renderer;
+    
     // Start is called before the first frame update
     void Start()
     {
-        startPos = transform.position;
+        mesh_Renderer = GetComponent<MeshRenderer>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(transform.position.y < startPos.y-50){
-        transform.position =startPos;
-        }
+        float y = Time.time * scroll_Speed;
+        Vector2 offset = new Vector2(0,y);
+        
+        mesh_Renderer.sharedMaterial.SetTextureOffset("_MainTex", offset);
     }
 }

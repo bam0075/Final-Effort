@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
-{
+{   
+    public GameObject projectilePrefab;
     private float speed = 5.0f;
     private Rigidbody playerRb;
     private float xBound =10;
@@ -31,6 +32,11 @@ public class PlayerController : MonoBehaviour
       transform.position = new Vector3(xBound, transform.position.y, transform.position.z);
       }
       
+      if(Input.GetKeyDown(KeyCode.Space))
+      {
+        //Launch a projectile from player
+        Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
+      }
      
       
     }
