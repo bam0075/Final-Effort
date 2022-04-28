@@ -5,9 +5,11 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {   
     public GameObject projectilePrefab;
+    public bool gameOver;
     private float speed = 5.0f;
     private Rigidbody playerRb;
     private float xBound =10;
+    
  
 
     // Start is called before the first frame update
@@ -37,7 +39,13 @@ public class PlayerController : MonoBehaviour
         //Launch a projectile from player
         Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
       }
-     
-      
     }
+     private void OnCollisionEnter(Collision collision){
+        if (collision.gameObject.CompareTag("Obstacle")){
+        gameOver = true;
+        Debug.Log("Game Over");
+        }
+     }
+      
+    
 }

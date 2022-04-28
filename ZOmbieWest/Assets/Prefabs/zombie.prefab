@@ -124,9 +124,10 @@ GameObject:
   - component: {fileID: 7781648495199428893}
   - component: {fileID: 1328858201400275687}
   - component: {fileID: 7765520634724659872}
+  - component: {fileID: 652931927238307782}
   m_Layer: 0
   m_Name: zombie
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -201,6 +202,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f1b1ca43ac79d4008b9c588c8f5fcc4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &652931927238307782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2940403991713371294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9c252da5774a410f95fea97be1488dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &6206397282250211318
